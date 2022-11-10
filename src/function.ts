@@ -1,5 +1,5 @@
 export async function getMeal(date: string): Promise<Meal> {
-    const req = await fetch(MEAL_API_URL+`MLSV_YMD=${date}`)
+    const req = await fetch(`${MEAL_API_URL}MLSV_YMD=${date}`)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const res = await req.json() as any;
     return res?.mealServiceDietInfo?.[1].row?.[0] as Meal;
