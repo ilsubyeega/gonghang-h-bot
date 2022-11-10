@@ -1,0 +1,11 @@
+name = "gonghang-h-bot"
+main = "./src/index.ts"
+compatibility_date = "2022-07-26"
+
+[triggers]
+crons = ["45 2 * * *"]
+
+[vars]
+DISCORD_WEBHOOK_URL	= ""
+MEAL_API_URL = "" 
+# https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=<REDACTED>&Type=json&pIndex=1&pSize=100&ATPT_OFCDC_SC_CODE=E10&SD_SCHUL_CODE=<REDACTED>&
